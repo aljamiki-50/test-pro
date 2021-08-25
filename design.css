@@ -7,11 +7,6 @@ html {
     margin: 0 auto;
 }
 
-.header {
-    display: block;
-    max-width: 1456px;
-}
-
 .section01 {
     display: block;
 }
@@ -791,21 +786,176 @@ p:last-child {
     display: flex;
     justify-content: space-around;
     height: 417px;
-    width: 1441px;
+    width: 1440px;
     border-radius: 0px;
     background: url(img/sec04/background-sec04.svg);
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
-    
-    border: whitesmoke solid 5.0px;
 }
 
 /* LAST-FOOTER  */
 .last-footer {
-    max-width: 1440px;
-    width: 1440px;
+    position: relative;
+    width: 100%;
     max-height: 392px;
     height: 392px;
-    background: url(/img/last-footer/last-footer\ background.svg);
+    background: #1E3C72;
     background-blend-mode: screen;
     /* background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%); */
+}
+.last-footer__bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(/img/last-footer/last-footer\ background.svg);
+}
+.last-footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.keep-up {
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167%;
+    /* identical to box height, or 40px */
+    
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 67px;
+    margin-bottom: 0px;
+}
+.stay-informed {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 165%;
+    /* or 30px */
+    
+    width: 493px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+.last-footer__enter-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+    height: 62px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 30px -2px rgba(80, 66, 92, 0.6);
+    border-radius: 100px;
+    margin-top: 60px;
+}
+.last-footer__email-btn {
+    width: 206px;
+    height: 54px;
+    background: linear-gradient(90deg, #4152A1 0%, #C251CB 100%);
+    border-radius: 100px;
+    border: none;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 167%;
+    /* identical to box height, or 27px */
+    
+    color: #fff;
+    margin-right: 5px;
+}
+.last-footer__input-email {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    margin-left: 35px;
+}
+.last-footer__input-email::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 167%;
+    color: #747474;
+}
+.rare-footer {
+    position: relative;
+    background-color: #059;
+    padding-top: 81px;
+    padding-bottom: 105px;
+    background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+}
+.rare-footer__stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(/img/star.svg);
+}
+.rare-footer__header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 133%;
+    color: #FFFFFF;
+    margin-left: 165px;
+    margin-bottom: 64px;
+}
+.rare-footer__hex-container {
+    max-width: 1454px;
+    margin-left: 190px;
+    margin-right: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.rare-footer__hex {
+    position: relative;
+    background: url(/img/hex/hex.svg);
+    height: 292px;
+    width: 292px;
+    background-repeat: no-repeat;
+    margin-top: -42px;
+}
+.rare-footer__inner-hex {
+    position: absolute;
+    left: -82px;
+    top: 20px;
+    background-image: url(/img/hex/inner-hex.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.rare-footer__inner-hex_white {
+    background: url(/img/hex/inner-hex-white.svg);
+    background-repeat: no-repeat;
+}
+.rare-footer__text {
+    margin-left: -40px;
+    max-width: 203px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 157.5%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.rare-footer__inner-hex_white .rare-footer__text {
+    font-size: 14px;
+    line-height: 165%;
+    text-align: center;
+    color: #1E3C72;
 }
