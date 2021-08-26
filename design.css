@@ -212,6 +212,7 @@ html {
     padding-left: 290px;
     padding-top: 60px;
     opacity: 2;
+    width: 1441px;
 }
 
 .section01 img {
@@ -343,18 +344,31 @@ html {
     display: block;
 } */
 
-.section02 {
+
+/* <!-- number of robots sold --> */
+
+.number-of-robots-sold {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 467px;
-    width: 1441px;
+    /* width: 1441px; */
     border-radius: 0px;
     background: radial-gradient(0.03% 0.03% at 50% 50%, #747474 0%, #1E3C72 1%, #2A5298 100%);
 }
 
-.section02 h2 {
+.number-of-robots__starts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(/img/star.svg);
+    z-index: 8;
+}
+
+.number-of-robots-sold h2 {
     height: 60px;
     width: 493px;
     border-radius: nullpx;
@@ -382,10 +396,22 @@ html {
     margin-bottom: 50px;
 }
 
-.mask-wrapper {
+.number-of-robots-sold__mask-wrapper {
+    position: relative;
     margin: 30px 0 60px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 57px;
+}
+
+.maskgroup {
+    position: absolute;
+}
+
+.maskgroup-1 {
+    position: absolute;
+    top: 20px;
 }
 
 .number p {
@@ -418,19 +444,17 @@ html {
     border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
-.number-footer {
-    height: 55px;
-    width: 447px;
-    border-radius: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.number-footer01 {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 80px;
+    height: 55px;
+    width: 447px;
 }
 
 .number-foot {
+    /* Width: 293px;
+    Height: 40px; */
     font-family: Helvetica;
     font-size: 24px;
     color: #FFF;
@@ -439,13 +463,11 @@ html {
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
-/* Choose The cost */
-
-
-/* Section3*/
+/* <!-- CHOOSE A COIN --> */
 
 .section3 {
     display: flex;
@@ -454,36 +476,36 @@ html {
     align-items: center;
 }
 
-.first-soldier {
-    background-image: url(/img/sec03/Ellipse\ 22.svg);
-    border: 20px;
-    border-radius: 100%;
-}
-
 .solider-coin-wrap01 {
     margin: 0 15px;
     position: relative;
-    max-width: 250px;
-    max-height: 250px;
-    width: 140px;
-    height: 140px;
+    Width: 112px;
+    Height: 112px;
     /* background-color: red; */
-    background-image: url(/img/sec03/Ellipse\ 22.svg);
+    /* background-image: url(/img/sec03/Ellipse\ 22.svg); */
     background-repeat: no-repeat;
     background-size: 121px 121px;
     background-position: -20px -7px;
 }
 
 .first-soldier {
-    margin-top: 5px;
-    margin-left: 15px;
-    Width 228px;
-    Height 302px;
+    background-image: url(/img/sec03/Ellipse\ 22.svg);
+    border: 20px;
+    border-radius: 100%;
+}
+
+.soldier-small {
+    width: 80px;
+    height: 80px;
+}
+
+.coin-type1 {
+    position: absolute;
+    background: linear-gradient(270deg, #D851D2 1.77%, #38529D 101.77%);
+    bottom: 0;
 }
 
 .coins-wrap1 {
-    background: linear-gradient(270deg, #D851D2 1.77%, #38529D 101.77%);
-    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,8 +520,8 @@ html {
 .solider-coin-wrap {
     margin: 0 40px;
     position: relative;
-    max-width: 90px;
-    max-height: 94px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .slider-coins {
@@ -509,6 +531,7 @@ html {
     max-width: 1450px;
     padding: 30px 0;
     justify-content: center;
+    align-items: center;
 }
 
 .soldier-small {
@@ -789,6 +812,80 @@ p:last-child {
     width: 1440px;
     border-radius: 0px;
     background: url(img/sec04/background-sec04.svg);
+}
+
+/* Get-in-touch */
+.get-in-touch {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E5E5E5;
+}
+.get-in-touch h3 {
+    width: 260px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 133%;
+    color: rgba(30, 60, 114, 1);
+}
+.get-in-touch__text {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: rgba(55, 93, 159, 1);
+    height: 60px;
+    width: 582px;
+}
+.get-in-touch__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 1100px;
+    width: 1150px;
+    border-radius: 100px;
+}
+.get-in-touch__contact a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+.get-in-touch__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    Width: 290px;
+    Height: 57px;
+    border-radius: 100px;
+    margin: 5px;
+    background: linear-gradient(90deg, #3B529E 0%, #CE51CE 100%);
+}
+.get-in-touch__img {
+    Width: 79px;
+    Height: 17px;
+    margin-left: 0px;
+    /* padding-right: 5px; */
+}
+.get-in-touch__img01 {
+    Width: 79px;
+    Height: 17px;
+    margin-left: -10px;
+}
+.telegram {
+    margin-left: -20px;
 }
 
 /* LAST-FOOTER  */
