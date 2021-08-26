@@ -264,17 +264,21 @@ html {
 }
 
 .section1 {
-    padding: 95px 260px;
     background-color: #E5E5E5;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section1-content {
+    max-width: 920px;
     background-color: #FFF;
     position: relative;
     height: 395px;
     padding-left: 211px;
     padding-right: 98px;
+    margin: 95px 260px 112px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -309,7 +313,6 @@ html {
     font-weight: bold;
     font-size: 36px;
     line-height: 133%;
-    margin-top: 54px;
     margin-bottom: 16px;
     color: #1E3C72;
 }
@@ -393,7 +396,15 @@ html {
 .number {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.number-of-robots-sold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 467px;
 }
 
 .number-of-robots-sold__mask-wrapper {
@@ -430,18 +441,10 @@ html {
     border-radius: nullpx;
 }
 
-.line-1 {
+.line {
     height: 0px;
     width: 475px;
-    border-radius: nullpx;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-}
-
-.line-2 {
-    border-radius: nullpx;
-    width: 475px;
-    height: 0px;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .number-footer01 {
@@ -450,6 +453,7 @@ html {
     border-radius: 80px;
     height: 55px;
     width: 447px;
+    margin-top: 34px;
 }
 
 .number-foot {
@@ -479,19 +483,47 @@ html {
 .solider-coin-wrap01 {
     margin: 0 15px;
     position: relative;
-    Width: 112px;
-    Height: 112px;
-    /* background-color: red; */
-    /* background-image: url(/img/sec03/Ellipse\ 22.svg); */
-    background-repeat: no-repeat;
-    background-size: 121px 121px;
-    background-position: -20px -7px;
+    width: 128px;
+    height: 128px;
+}
+
+svg {
+    z-index: 9999;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke: #264B8C;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform: translate(15px, 15px);
+}
+
+
+/* тут нужно будет  менять % на  50%!! место -40 */
+
+.circle_box:nth-child(1) {
+    stroke-dasharray: calc(100 * 3);
+    stroke-dashoffset: calc((100 * 3) - ((100 * 3) * -40) / 100);
+}
+
+.circle_box div {
+    width: 128px;
+    height: 128px;
+    position: relative;
 }
 
 .first-soldier {
-    background-image: url(/img/sec03/Ellipse\ 22.svg);
-    border: 20px;
-    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
 }
 
 .soldier-small {
@@ -771,19 +803,29 @@ html {
 
 /* begin of section05 */
 .section05 {
+    position: relative;
+    flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     height: 417px;
     width: 1441px;
     border-radius: 0px;
-    background: url(img/sec04/background-sec04.svg);
+    background: url(img/background-imge-choose-cost.svg);
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
     
     border: whitesmoke solid 5.0px;
 }
+.choose-the-cost {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1024px;
+}
 .number-footer {
-    height: 36.35087585449219px;
-    width: 79.57894897460938px;
+    height: 36px;
+    width: 79px;
     background: linear-gradient(90deg, #BB52C9 0%, #35519C 90.48%);
     border-radius: 8px;
     font-family: HelveticaNeueCyr;
@@ -794,14 +836,22 @@ html {
     letter-spacing: 0em;
     /* color: rgb(216, 209, 209); */
 }
-p:last-child {
+.number-footer01 {
     color: white;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number-footer p {
+    color: white;
+}
+.choose-the-cost-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* begin of section06 */
